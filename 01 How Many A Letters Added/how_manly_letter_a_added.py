@@ -26,13 +26,15 @@ word = input("Give the word that should be calculated:\n")
 total_a = 0
 word_iter = iter(enumerate(range(0, len(word))))
 
+# Create a list from a string
 def StrToList(string):
     list1 = []
     list1[:0] = string
     return list1
 
-word_list = StrToList(word)
-print(word_list)
+# Print the string as list - makes it easier to read in cmd prompt
+print(StrToList(word))
+
 # Manage beginning of word
 if word[0] != 'a':
     total_a += 2
@@ -61,6 +63,7 @@ for i, letters in word_iter:
         next(word_iter)
         if (i+3 >= len(word)):
             break
+    # if both the 2 next letters are A, then add zero
     elif (word[i+1] == 'a') and (word[i+2] == 'a'):
         total_a += 0
         for j in range(2):
