@@ -1,0 +1,17 @@
+Create a program that figures out the number of letter A that is added to words given below.
+
+There should be 2 A's between each letter, including before and after the word.
+If there already is 1 A's between two letters, only 1 A should be added.
+If there already are 2 A's between two letters, no additional A's should be added.
+
+Assume word is at least 2 letters long, and has no more than 2 consecutive A's.
+
+Examples:
+
+me = aamaaeaa = 6 A's added
+
+hey = aahaaeaayaa = 8 A's added
+
+man = aamaanaa = 5 A's added
+
+naan = aanaanaa = 4 A's added
