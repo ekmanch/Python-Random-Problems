@@ -8,7 +8,9 @@
 # If there already is 1 A's between two letters, only 1 A should be added.
 # If there already are 2 A's between two letters, no additional A's should be added.
 #
-# Assume that words are at least 2 letters long and only lower case.
+# Assume that words are at least 2 letters long.
+# Assume that all letters are lower case.
+# Assume that no word contains more than 2 consecutive A's.
 # Examples:
 #
 # me = aamaaeaa = 6 A's added
